@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19a1ae;
+  position: relative;
+  overflow: hidden;
+}
+* body .circle-top {
+  top: -70%;
+  left: -20%;
+  position: absolute;
+}
+* body .circle-bottom {
+  bottom: -90%;
+  right: -15%;
+  position: absolute;
+}
+* body .card-container {
+  width: 350px;
+  height: 374px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+* body .card-container .profile-img {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #fff;
+  background-image: url("../../images/image-victor.jpg");
+  top: 92px;
+  left: 127px;
+}
+* body .card-container .card-top {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+* body .card-container .card-top .bg-card {
+  width: 100%;
+  background-image: url("../../images/bg-pattern-card.svg");
+}
+* body .card-container .card-bottom {
+  text-align: center;
+  padding-top: 72px;
+  font-family: "Kumbh Sans";
+}
+* body .card-container .card-bottom h1 {
+  color: #2e3349;
+  font-weight: 700;
+  font-size: 18px;
+}
+* body .card-container .card-bottom h1 span {
+  font-weight: 400;
+  color: #6b7082;
+  font-size: 18px;
+}
+* body .card-container .card-bottom p {
+  font-size: 14px;
+  color: #6b7082;
+  font-weight: 400;
+}
+* body .card-container .card-bottom .stats-cont::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #e8e9ec;
+  top: 28px;
+  left: 0;
+}
+* body .card-container .card-bottom .stats-cont {
+  padding: 0 50px;
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 375px) {
+  * body .circle-top {
+    top: -75%;
+    left: unset;
+    right: 200px;
+  }
+  * body .circle-bottom {
+    bottom: -90%;
+    right: unset;
+    left: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
