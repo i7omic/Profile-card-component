@@ -13,112 +13,122 @@
         background-color: #19a1ae;
         position: relative;
         overflow: hidden;
-
-        .circle-top {
-            top: -70%;
-            left: -20%;
-            position: absolute;
-        }
-
-        .circle-bottom {
-            bottom: -90%;
-            right: -15%;
-            position: absolute;
-        }
-
-        .card-container {
-            width: 350px;
-            height: 374px;
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-            background-color: #fff;
-
-            .profile-img {
+        
+        .container {
+            overflow-x: hidden;
+            .circle-top {
+                top: -70%;
+                left: -20%;
                 position: absolute;
-                width: 96px;
-                height: 96px;
-                border-radius: 50%;
-
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                border: 5px solid #fff;
-                background-image: url('../../images/image-victor.jpg');
-                top: 92px;
-                left: 127px;
             }
-
-            .card-top {
-                width: 100%;
-                height: 140px;
+    
+            .circle-bottom {
+                bottom: -90%;
+                right: -15%;
+                position: absolute;
+            }
+    
+            .card-container {
+                width: 350px;
+                height: 374px;
+                border-radius: 8px;
                 overflow: hidden;
-
-                .bg-card {
-                    width: 100%;
-                    background-image: url('../../images/bg-pattern-card.svg');
+                position: relative;
+                background-color: #fff;
+    
+                .profile-img {
+                    position: absolute;
+                    width: 96px;
+                    height: 96px;
+                    border-radius: 50%;
+    
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border: 5px solid #fff;
+                    background-image: url('../../images/image-victor.jpg');
+                    top: 92px;
+                    left: 127px;
                 }
-            }
-
-            .card-bottom {
-                text-align: center;
-                padding-top: 72px;
-                font-family: 'Kumbh Sans';
-                
-                h1 {
-                    color: #2e3349;
-                    font-weight: 700;
-                    font-size: 18px;
-
-                    span {
-                        font-weight: 400;
-                        color: #6b7082;
-                        font-size: 18px;
+    
+                .card-top {
+                    width: 100%;
+                    height: 140px;
+                    overflow: hidden;
+    
+                    .bg-card {
+                        width: 100%;
+                        background-image: url('../../images/bg-pattern-card.svg');
                     }
                 }
-
-                p {
-                    font-size: 14px;
-                    color: #6b7082;
-                    font-weight: 400;
-                }
-
-                .stats-cont::before {
-                    content: '';
-                    position: absolute;
-                    height: 1px;
-                    width: 100%;
-                    background-color: #e8e9ec;
-                    top: 28px;
-                    left: 0;
-                }
-                
-                .stats-cont {
-                    padding: 0 50px;
-                    position: relative;
-                    padding-top: 50px;
-                    display: flex;
-                    justify-content: space-between;
+    
+                .card-bottom {
+                    text-align: center;
+                    padding-top: 72px;
+                    font-family: 'Kumbh Sans';
+                    
+                    h1 {
+                        color: #2e3349;
+                        font-weight: 700;
+                        font-size: 18px;
+    
+                        span {
+                            font-weight: 400;
+                            color: #6b7082;
+                            font-size: 18px;
+                        }
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        color: #6b7082;
+                        font-weight: 400;
+                    }
+    
+                    .stats-cont::before {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 100%;
+                        background-color: #e8e9ec;
+                        top: 28px;
+                        left: 0;
+                    }
+                    
+                    .stats-cont {
+                        padding: 0 50px;
+                        position: relative;
+                        padding-top: 50px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
                 }
             }
-
         }
     }
 
     @media (max-width: 375px) {
         body {
+            .container{ 
+                position: fixed;
+                width: 375px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
 
-            .circle-top {
-                top: -75%;
-                left: unset;
-                right: 200px;
-            }
-            .circle-bottom {
-                bottom: -90%;
-                right: unset;
-                left: 150px;
+                .circle-top {
+                    top: -75%;
+                    left: unset;
+                    right: 200px;
+                }
+                .circle-bottom {
+                    bottom: -90%;
+                    right: unset;
+                    left: 150px;
+                }
             }
         }
-        
     }
 }

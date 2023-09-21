@@ -13,17 +13,20 @@
   position: relative;
   overflow: hidden;
 }
-* body .circle-top {
+* body .container {
+  overflow-x: hidden;
+}
+* body .container .circle-top {
   top: -70%;
   left: -20%;
   position: absolute;
 }
-* body .circle-bottom {
+* body .container .circle-bottom {
   bottom: -90%;
   right: -15%;
   position: absolute;
 }
-* body .card-container {
+* body .container .card-container {
   width: 350px;
   height: 374px;
   border-radius: 8px;
@@ -31,7 +34,7 @@
   position: relative;
   background-color: #fff;
 }
-* body .card-container .profile-img {
+* body .container .card-container .profile-img {
   position: absolute;
   width: 96px;
   height: 96px;
@@ -44,36 +47,36 @@
   top: 92px;
   left: 127px;
 }
-* body .card-container .card-top {
+* body .container .card-container .card-top {
   width: 100%;
   height: 140px;
   overflow: hidden;
 }
-* body .card-container .card-top .bg-card {
+* body .container .card-container .card-top .bg-card {
   width: 100%;
   background-image: url("../../images/bg-pattern-card.svg");
 }
-* body .card-container .card-bottom {
+* body .container .card-container .card-bottom {
   text-align: center;
   padding-top: 72px;
   font-family: "Kumbh Sans";
 }
-* body .card-container .card-bottom h1 {
+* body .container .card-container .card-bottom h1 {
   color: #2e3349;
   font-weight: 700;
   font-size: 18px;
 }
-* body .card-container .card-bottom h1 span {
+* body .container .card-container .card-bottom h1 span {
   font-weight: 400;
   color: #6b7082;
   font-size: 18px;
 }
-* body .card-container .card-bottom p {
+* body .container .card-container .card-bottom p {
   font-size: 14px;
   color: #6b7082;
   font-weight: 400;
 }
-* body .card-container .card-bottom .stats-cont::before {
+* body .container .card-container .card-bottom .stats-cont::before {
   content: "";
   position: absolute;
   height: 1px;
@@ -82,7 +85,7 @@
   top: 28px;
   left: 0;
 }
-* body .card-container .card-bottom .stats-cont {
+* body .container .card-container .card-bottom .stats-cont {
   padding: 0 50px;
   position: relative;
   padding-top: 50px;
@@ -90,12 +93,21 @@
   justify-content: space-between;
 }
 @media (max-width: 375px) {
-  * body .circle-top {
+  * body .container {
+    position: fixed;
+    width: 375px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  * body .container .circle-top {
     top: -75%;
     left: unset;
     right: 200px;
   }
-  * body .circle-bottom {
+  * body .container .circle-bottom {
     bottom: -90%;
     right: unset;
     left: 150px;
